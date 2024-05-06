@@ -1,0 +1,199 @@
+// Fonts
+//@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+@import '~@mdi/font/css/materialdesignicons.css';
+//ref website -> https://materialdesignicons.com/
+//npm i @mdi/font
+
+// Bootstrap
+//@import '~bootstrap/scss/bootstrap';
+
+
+//font awesome
+//@import '~font-awesome/css/font-awesome.css';
+//npm i font-awesome
+//https://fontawesome.com/v4.7.0/
+
+
+//for map integration
+//@import '~leaflet';
+//@import "~leaflet-routing-machine";
+//@import '@vueup/vue-quill/dist/vue-quill.snow.css';
+@import '~@vueup/vue-quill/dist/vue-quill.snow.css';
+
+
+html{
+    background-color: rgb(224, 219,219) !important;
+}
+
+.panel{
+    background-color:white !important;
+}
+
+.debug{
+    border: 1px solid red;
+}
+
+.panel-footer{
+    padding: 15px;
+    border-top: 1px solid rgb(226, 226, 226);
+    
+}
+
+
+@import '~animate.css/animate';
+//npm install animate.css --save
+
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+//
+////Set your colors
+$primary:#1E90FF;
+$primary-light: findLightColor($primary);
+$primary-dark: findDarkColor($primary);
+$primary-invert: findColorInvert($primary);
+$twitter: #4099FF;
+$twitter-invert: findColorInvert($twitter);
+
+// Lists and maps
+$custom-colors: null !default;
+$custom-shades: null !default;
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+    $colors: mergeColorMaps(
+            (
+                "white": (
+                    $white,
+                    $black,
+                ),
+                "black": (
+                    $black,
+                    $white,
+                ),
+                "light": (
+                    $light,
+                    $light-invert,
+                ),
+                "dark": (
+                    $dark,
+                    $dark-invert,
+                ),
+                "primary": (
+                    $primary,
+                    $primary-invert,
+                    $primary-light,
+                    $primary-dark,
+                ),
+                "link": (
+                    $link,
+                    $link-invert,
+                    $link-light,
+                    $link-dark,
+                ),
+                "info": (
+                    $info,
+                    $info-invert,
+                    $info-light,
+                    $info-dark,
+                ),
+                "success": (
+                    $success,
+                    $success-invert,
+                    $success-light,
+                    $success-dark,
+                ),
+                "warning": (
+                    $warning,
+                    $warning-invert,
+                    $warning-light,
+                    $warning-dark,
+                ),
+                "danger": (
+                    $danger,
+                    $danger-invert,
+                    $danger-light,
+                    $danger-dark,
+                ),
+            ),
+            $custom-colors
+    );
+
+//// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+
+//navbar
+$navbar-height: 5rem;
+$navbar-item-img-max-height: 4rem;
+
+
+//$navbar-burger-color: white;
+//$navbar-item-color: #ffffff;
+//$navbar-item-hover-color: #a7f1a7;
+
+//.navbar-start > .navbar-item {
+//    font-weight: bold;
+//
+//}
+//.navbar-start > .navbar-item{
+//    transition: 0.5s;
+//}
+//
+//.navbar-start > .navbar-item:hover{
+//    background-color: transparent;
+//    border-bottom: 3px solid blue;
+//}
+//.navbar-start > .navbar-item > .navbar-link:hover{
+//    border-bottom: 3px solid blue;
+//}
+
+
+
+// Import Bulma and Buefy styles
+
+.navbar-menu.is-active {
+     background-color: $primary;
+}
+a.navbar-item, .navbar-link {
+    color: white;
+}
+
+a.navbar-item:hover {
+    color: blue;
+}
+
+.has-bg-img { background: url('/img/banner.png')center center; background-size:cover; }
+
+
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
+
+.rules-content ul{
+    margin: 0 0 0 20px;
+    list-style-type: circle;
+    
+}
+
+.rules-content ol{
+    margin: 0 0 0 20px;
+}
+
+
+
+
+// Import only what you need from Bulma
+//@import "~bulma/sass/utilities/_all.sass";
+//@import "~bulma/sass/base/_all.sass";
+//@import "~bulma/sass/elements/button.sass";
+//@import "~bulma/sass/elements/container.sass";
+//@import "~bulma/sass/elements/title.sass";
+//@import "~bulma/sass/form/_all.sass";
+//@import "~bulma/sass/components/navbar.sass";
+//@import "~bulma/sass/layout/hero.sass";
+//@import "~bulma/sass/layout/section.sass";
