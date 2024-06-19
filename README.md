@@ -1,2 +1,1 @@
-# bh-waze
-bh-waze algadipz
+# ALGADIPE KIGWA
